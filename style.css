@@ -1,6 +1,4 @@
  #site{
-
-
 }
 /* latin */
 @font-face {
@@ -10,89 +8,23 @@
   src: url(https://fonts.gstatic.com/s/playfairdisplay/v29/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA-Q.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-@media (min-width: 768px){
-.newcontainer {
-    width: 750px;
- }
-}
-@media (min-width: 992px){
-.newcontainer {
-    width: 970px;
- }
-}
-@media (min-width: 1200px){
-.newcontainer {
-    max-width: 1300px;
-    padding: 0;
-    width: 93%;
-    margin-right: auto;
-    margin-left: auto;
-  }
- }
-
-
 
 
 .p0{
   padding: 0  !important;
 }
-.preview_bg{
-  width: 100%;
-  background-color: #262626;
-}
-.preview_header{
-    font-size: 12px;
-    height: 54px;
-    z-index: 100;
-    line-height: 54px;
-    margin-bottom: 1px;
-    width: 100%;
-
-}
-
-.preview_envato_logo{
-    float: left;
-    padding: 0;
-}
-
-.preview_envato_logo a{
-
-  display: inline-block;
-  position: absolute;
-  top: 18px;
-  text-indent: -9999px;
-  height: 18px;
-  width: 152px;
-  background:url(img/envato_market-logo.svg);
-  background-size: 152px 18px;
-}
-
-.preview_action{
-  float: right;
-  padding: 0 20px;
-}
-.preview_action button{
-    color: white;
-    font-size: 14px;
-    padding: 5px 20px;
-    margin-top: 10px;
-    margin-right: -15px;
-    line-height: 1.5;
-    box-shadow: 0 2px 0 #6f9a37;
-    background-color: #82b440;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 .header {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 9;
-  background-color: #333333a6;
+  background-color: #333333a6;*/
 }
 .navbar_header{
-  float: left;
+  padding: 0 15px ;
+
 }
 .navbar-header.col-md-3 {
   padding: 0 15px;
@@ -164,6 +96,8 @@
   margin-right : 15px;
   margin-left : 10px;
 }
+
+
 .button-winona  {
     color: #ffffff !important;
     padding: 12px 40px !important;
@@ -392,8 +326,8 @@ The overlay effect with black background */
 }
 
 .birinci{
-  position: relative;
-  overflow: hidden;
+  /* position: relative; */
+  /* overflow: hidden; */
 }
 .ikinci{
 
@@ -521,12 +455,51 @@ The overlay effect with black background */
 }
 
 #mobile_navbar_icon{
-  width: 95px;
-  height: auto;
+  height: 55px;
+  padding: 10px;
+}
+
+.newcontainer {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @media (min-width:250px) and (max-width: 350px) {
-   .ikinci_birinci {
-     margin-top: 0px !important;
-   }
+
+}
+
+@media (min-width: 768px){
+.newcontainer {
+    width: 750px;
+ }
+
+
+}
+@media (min-width: 992px){
+.newcontainer {
+    width: 970px;
+ }
+}
+
+@media (min-width: 1300px){
+.newcontainer {
+    width: 1300px;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+  .header_info_group img{
+    display: none;
+  }
+  .header_info_group{
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .header_info_label h3{
+      font-size: 15px !important;
+  }
 }
