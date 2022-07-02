@@ -22,6 +22,8 @@
 
 .header {
   position: relative;
+  z-index: +999999;
+  background-color:rgba(0, 0, 0, 0.5);
 }
 
 .navbar_header .logo{
@@ -66,7 +68,6 @@
   font-weight: 600;
   font-size: 15px !important;
   color: #ededed;
-
 }
 .header_info_group h5{
   font-size: 13px !important;
@@ -126,6 +127,10 @@
 #nav_bar .nav-item a.nav-link{
   padding: 25px;
   border-left: 1px solid white;
+  color: white;
+}
+
+#nav_bar span.navbar-toggle-icon{
   color: white;
 }
 
@@ -245,7 +250,7 @@ The overlay effect with black background */
 /******-----------------------------*********************---------------------*/
 /* ***************************************************************************** */
 /* ******************************************************************************** */
-#owl_slider  img{
+/* #owl_slider  img{
     display: block;
     width: 100%;
 
@@ -254,8 +259,14 @@ The overlay effect with black background */
   position: absolute;
   top: 0;
   z-index: -1;
-}
+} */
 
+.slider_buton_sag{
+  margin-left: -70px;
+}
+.slider_buton_sol{
+  margin-rigth: -70px;
+}
 
 .first_content{
   padding-top: 75px;
@@ -281,8 +292,7 @@ The overlay effect with black background */
   position: relative;
 } */
 .birinci_main{
-  padding-top: 200px;
-  position: absolute;
+  z-index: +1;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -290,7 +300,7 @@ The overlay effect with black background */
 
 
 .my_button{
-  display: flex;
+
   justify-content: center;
   align-items: center;
 
@@ -322,8 +332,10 @@ The overlay effect with black background */
 
 .my_slider{
   width: 100%;
-  position: fixed;
+  position: absolute !important;
+  top: 0 ;
 }
+
 .ikinci_birinci{
   margin-top: -165px;
   margin-bottom: 110px;
@@ -437,7 +449,7 @@ The overlay effect with black background */
   margin: 15px 15px 15px 0px;
 }
 
-
+/* ******************************************** */
 @media (min-width:320px) and (max-width: 768px) {
   #nav_bar a.nav-link {
     padding: 0px 0px 10px 0px !important;
@@ -448,9 +460,28 @@ The overlay effect with black background */
   .mobile_navbar_inline_icon{
     display: inline-block !important;
   }
-  #owl_slider  img{
-      height: 500px;
+  .my_slider img{
+    height: 480px;
   }
+  .first_content h1{
+    font-size: 35px;
+    line-height: 30px;
+  }
+  .first_content p{
+    font-size: 12px ;
+  }
+  .my_button button{
+    font-size: 10px;
+    padding: 9px 20px 9px 20px;
+    margin-top: 25;
+  }
+  .slider_buton_sag{
+    margin-left: -15px;
+  }
+  .slider_buton_sol{
+    margin-right:  -15px;
+  }
+
 }
 
 @media (min-width: 768px){
@@ -458,7 +489,7 @@ The overlay effect with black background */
     width: 750px;
  }
 }
-
+/* ******************************************** */
 @media (min-width:768px) and (max-width: 992px) {
   .sag_menu a{
      padding:23px 20px 23px 20px !important;
@@ -466,6 +497,19 @@ The overlay effect with black background */
   #nav_bar a.nav-link {
     padding-left: 15px !important;
     padding-right: 15px !important;
+    font-size: 13px;
+  }
+  .my_slider img{
+    height: 800px;
+  }
+  .first_content h1{
+    font-size: 65px;
+    line-height: 55px;
+  }
+  .first_content p{
+    font-size: 18px ;
+  }
+  .my_button button{
     font-size: 13px;
   }
 
@@ -477,6 +521,7 @@ The overlay effect with black background */
  }
 }
 
+/************************************************/
 @media (min-width:992px) and (max-width: 1300px) {
   .sag_menu a{
      padding:23px 20px 23px 20px !important;
@@ -485,6 +530,15 @@ The overlay effect with black background */
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+  .my_slider img{
+    height: 1000px;
+  }
+  .first_content h1{
+    font-size: 80px;
+    line-height: 70px;
+  }
+
+
 }
 
 
@@ -496,8 +550,8 @@ The overlay effect with black background */
    padding-left: 33px !important;
    padding-right: 33px !important;
  }
- #owl_slider  img{
-     height: 1200px;
+ .my_slider img{
+   height: 1100px;
  }
 
 }
