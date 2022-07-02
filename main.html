@@ -8,14 +8,15 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 </head>
@@ -33,7 +34,7 @@
   <div id="site" >
     <div class="birinci">
       <header class="header">
-        <div class="newcontainer d-none d-md-block bg-info">
+        <div class="newcontainer d-none d-md-block ">
           <div class="row">
             <div class="navbar_header col-md-3">
               <div class="logo">
@@ -75,76 +76,109 @@
             </div>
           </div>
         </div>
+        <div class="container-fluid navbar_border  ">
+          <div class="newcontainer">
+            <div class="row">
 
+                <nav id="nav_bar" class="col-md-12 navbar navbar-expand-md navbar-light" >
 
-            <div class="newcontainer">
-              <div class="row">
-                <nav class="navbar navbar-expand-md col-md-12 flex-row-reverse ">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                      <span class="navbar-toggler-icon"></span>
+                  <!-- mobile navbar şirket simgesi -->
+                  <img id="mobile_navbar_icon" class="d-md-none " src="img/logo.png" alt="Wega">
+                  <!-- mobil ana menu buton simgesi -->
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
                   </button>
-                  <img id="mobile_navbar_icon" class="d-md-none  " src="img/logo.png" alt="Wega">
-                  <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
-                    <ul class="navbar-nav"  >
-                      <li class="nav-item dropdown menu-item">
-                          <a class="nav-link "  href="#">Home</a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Link 1</a>
-                            <a class="dropdown-item" href="#">Link 2</a>
-                            <a class="dropdown-item" href="#">Link 3</a>
-                          </div>
-                      </li>
-                      <li class="nav-item dropdown menu-item">
-                        <a class="nav-link "  href="#">Our Services</a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <li class="nav-item dropdown menu-item" >
-                        <a class="nav-link "  href="#">Projects</a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                        </div>
-                      </li>
-                      <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">News</a>
-                      </li>
-                      <li class="nav-item dropdown menu-item" >
-                        <a class="nav-link "  href="#">Pages</a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Link 1</a>
-                          <a class="dropdown-item" href="#">Link 2</a>
-                          <a class="dropdown-item" href="#">Link 3</a>
-                          <a class="dropdown-item" href="#">Link 1</a>
-                        </div>
-                      </li>
-                      <li class="nav-item menu-item">
-                        <a class="nav-link" href="#" style=" border-right: 1px solid rgba(255,255,255,0.1); ">Purchase Theme</a>
-                      </li>
-                    </ul>
-                    <div class="sag_menu_ana">
-                      <div class="col sag_menu">
-                        <a href="#"><img src="img/list_icon.png" alt="menu_icon"></a>
-                      </div>
-                      <div class="col sag_menu" style=" border-right: 1px solid rgba(255,255,255,0.1);">
-                        <a href="#" onclick="openSearch()"><img src="img/search_icon.png" alt="search_icon"></a>
-                      </div>
-                    </div>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <ul class="navbar-nav mr-auto">
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         HOME
+                       </a>
+                       <!-- <button type="button" class="mobile_navbar_inline_icon btn ">1</button> -->
+
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Another action</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item" href="#">Something else here</a>
+                       </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         OUR SERVICES
+                       </a>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Another action</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item" href="#">Something else here</a>
+                       </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         PROJECTS
+                       </a>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Another action</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item" href="#">Something else here</a>
+                       </div>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">NEWS</a>
+                     </li>
+                     <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         PAGES
+                       </a>
+                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                         <a class="dropdown-item" href="#">Action</a>
+                         <a class="dropdown-item" href="#">Another action</a>
+                         <div class="dropdown-divider"></div>
+                         <a class="dropdown-item" href="#">Something else here</a>
+                       </div>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link " href="#">PURCHASE THEME</a>
+                     </li>
+                   </ul>
+                   <div class="sag_menu_ana">
+                     <div class="sag_menu">
+                       <a href="#"><img src="img/list_icon.png" alt="menu_icon"></a>
+                     </div>
+                     <div class="sag_menu" >
+                       <a href="#" onclick="openSearch()"><img src="img/search_icon.png" alt="search_icon"></a>
+                     </div>
+                   </div>
                   </div>
                 </nav>
-              </div>
+
             </div>
+          </div>
+        </div>
+
       </header>
+      <div class="owl_slider_main">
+           <div id="owl_slider" class="owl-carousel owl-theme owl-loaded">
+             <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <div class="owl-item">
+                      <img src="img/photovoltaic_slider_1.jpg" alt="ph1">
+                  </div>
+                  <div class="owl-item">
+                    <img src="img/photovoltaic_slider_2.jpg" alt="ph1">
+                  </div>
+                  <div class="owl-item">
+                    <img src="img/photovoltaic_slider_3.jpg" alt="ph1">
+                  </div>
+                </div>
+
+            </div>
+          </div>
+      </div>
+
 
           <!-- <div  class="my_slider carousel slide "  id="carouselExampleControls" data-ride="carousel">
               <div class="carousel-inner">
@@ -200,6 +234,15 @@
 
 
     </div>
+
+    <!-- <div class="">
+      <div class="newcontainer">
+          <div class="w-100 h-100 bg-success">
+
+          </div>
+      </div>
+    </div> -->
+
 
     <!-- <div class="ikinci">
         <div class="newcontainer">
@@ -317,5 +360,22 @@
 
 
   </div>
+
+<script type="text/javascript">
+
+
+$('#owl_slider').owlCarousel({
+  loop:true,
+
+  items:1,
+  nav:true,
+  dots:false,
+
+})
+
+
+
+</script>
+
 </body>
 </html>
