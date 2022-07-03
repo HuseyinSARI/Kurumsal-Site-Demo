@@ -116,8 +116,8 @@
   display:block;
 }
 .navbar_border{
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid rgb(255 255 255 / 40%);
+  border-bottom: 1px solid rgb(255 255 255 / 40%);
 }
 /* bt4 navbar  */
 .navbar{
@@ -126,13 +126,14 @@
 
 #nav_bar .nav-item a.nav-link{
   padding: 25px;
-  border-left: 1px solid white;
+  border-left: 1px solid rgb(255 255 255 / 40%);
   color: white;
 }
 
 #nav_bar span.navbar-toggle-icon{
   color: white;
 }
+
 
 .mobile_navbar_inline_icon{
   display: none ;
@@ -150,7 +151,7 @@
 
 .sag_menu a{
    padding:25px 35px 25px 35px;
-   border-left: 1px solid white;
+   border-left: 1px solid rgb(255 255 255 / 40%);
 }
 
 .sag_menu_ana{
@@ -447,6 +448,13 @@ The overlay effect with black background */
   margin: 15px 15px 15px 0px;
 }
 
+
+.ucuncu .img{
+
+ }
+
+/************************************************/
+/*************************************************/
 /* ******************************************** */
 @media (min-width:320px) and (max-width: 767px) {
   #nav_bar a.nav-link {
@@ -455,9 +463,33 @@ The overlay effect with black background */
     color : black !important;
     display: inline-block;
   }
+  #nav_bar .navbar-collapse{
+    background-color: white;
+    padding: 10px 0px 10px 10px;
+  }
+  #nav_bar .sag_menu_ana{
+    display: none;
+  }
   .mobile_navbar_inline_icon{
     display: inline-block !important;
   }
+  #nav_bar .navbar_border{
+    border-top: none;
+  }
+  #nav_bar .dropdown-menu{
+    border:none;
+    padding: 0px;
+    margin: 0px;
+  }
+  #nav_bar .navbar-collapse{
+    position: absolute;
+    top: 85px;
+    left: 0px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+  }
+
+
   .my_slider img{
     height: 480px;
   }
