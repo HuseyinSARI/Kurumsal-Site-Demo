@@ -1,28 +1,74 @@
-
 <!DOCTYPE html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Wega - Construction Demo </title>
+  <meta charset="utf-8">
+  <title>Wega - Construction Demo </title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yantramanav:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+    integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
 </head>
-<body >
-  <div id="site" >
+
+<body>
+  <div id="site">
+    <div id="mySidenav_black" class="" onclick="closeNav()"></div>
+    <div id="myOverlay" class="overlay">
+      <span class="closebtn" onclick="closeSearch()" title="Close Overlay"><i class="fa-thin fa-o fa-lg fa_yuvarlak">
+          <h4>x</h4>
+        </i></span>
+      <div class="overlay-content">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Enter search term..." name="search">
+          <button type="submit"><i class="fa fa-search" style="color:white;"></i></button>
+        </form>
+      </div>
+    </div>
     <div class="birinci">
+      <div id="mySidenav" class="sidenav">
+        <div class="mySidenav_inner ">
+          <img src="https://wega.modeltheme.com/wp-content/themes/wega/images/favicon-1.png" alt="wega logo">
+          <p>45 Grand Central Terminl New York, NY 1017 City name, CA 90896 United State USA</p>
+          <p style="font-weight: 600;">wega@modeltheme.com</p>
+          <div class="sidebar_icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-stumbleupon"></i>
+            <i class="fa-brands fa-tumblr"></i>
+          </div>
+        </div>
+      </div>
       <header class="header">
         <div class="newcontainer d-none d-md-block ">
           <div class="row">
@@ -37,7 +83,7 @@
               <div class="header_info">
                 <div class="pull_left header_info_group">
                   <div class="head_info_icon pull_left text-center">
-                      <img src="img/saat.png" alt="saat_icon">
+                    <img src="img/saat.png" alt="saat_icon">
                   </div>
                   <div class="header_info_label pull_left text-center">
                     <h3>Monday - Friday 09:00 - 19:00</h3>
@@ -47,7 +93,7 @@
                 </div>
                 <div class="pull_left header_info_group">
                   <div class="head_info_icon pull_left text-center">
-                      <img src="img/tel_icon.png" alt="tel_icon">
+                    <img src="img/tel_icon.png" alt="tel_icon">
                   </div>
                   <div class="header_info_label pull_left text-center">
                     <h3>
@@ -60,7 +106,7 @@
                   </div>
                 </div>
                 <div class="pull_left header_info_group ">
-                    <a href="#" class="button-winona btn btn-medium " id="btn_inquiry">INQUIRY</a>
+                  <a href="#" class="button-winona btn btn-medium " id="btn_inquiry">INQUIRY</a>
                 </div>
               </div>
             </div>
@@ -69,318 +115,573 @@
         <div class="container-fluid navbar_border  ">
           <div class="newcontainer">
             <div class="row">
-                <nav id="nav_bar" class="col-md-12 navbar navbar-expand-md navbar-light" >
-
-                  <!-- mobile navbar şirket simgesi -->
-                  <img id="mobile_navbar_icon" class="d-md-none " src="img/logo.png" alt="Wega">
-                  <!-- mobil ana menu buton simgesi -->
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                   <!-- <span class="navbar-toggler-icon"></span> -->
-                   <i class="fa fa-bars" style="color:white;" aria-hidden="true"></i>
-                  </button>
-
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav mr-auto">
-                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         HOME
-                       </a>
-
-                       <!-- <button type="button" class="mobile_navbar_inline_icon btn ">1</button> -->
-                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="#">Main Home</a>
-                         <a class="dropdown-item" href="#">Solar Photovoltaic Installers</a>
-                         <a class="dropdown-item" href="#">Interior Designing</a>
-                       </div>
-                     </li>
-                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         OUR SERVICES
-                       </a>
-                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="#">Services 1 Columns</a>
-                         <a class="dropdown-item" href="#">Services 2 Columns</a>
-                         <a class="dropdown-item" href="#">Services 3 Columns</a>
-                         <a class="dropdown-item" href="#">Services 1 Columns</a>
-                         <a class="dropdown-item" href="#">Services 2 Columns</a>
-                         <a class="dropdown-item" href="#">Services 3 Columns</a>
-                       </div>
-                     </li>
-                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         PROJECTS
-                       </a>
-                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="#">Services 1 Columns</a>
-                         <a class="dropdown-item" href="#">Services 2 Columns</a>
-                         <a class="dropdown-item" href="#">Services 3 Columns</a>
-                         <a class="dropdown-item" href="#">Services 1 Columns</a>
-                         <a class="dropdown-item" href="#">Services 2 Columns</a>
-                         <a class="dropdown-item" href="#">Services 3 Columns</a>
-                       </div>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link" href="#">NEWS</a>
-                     </li>
-                     <li class="nav-item dropdown">
-                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         PAGES
-                       </a>
-                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="#">Contact Us</a>
-                         <a class="dropdown-item" href="#">Shop</a>
-                         <a class="dropdown-item" href="#">Our Team</a>
-                         <a class="dropdown-item" href="#">About Us</a>
-                       </div>
-                     </li>
-                     <li class="nav-item">
-                       <a class="nav-link " href="#" style="border-right: 1px solid rgb(255 255 255 / 40%);">PURCHASE THEME</a>
-                     </li>
-                   </ul>
-                   <div class="sag_menu_ana">
-                     <div class="sag_menu">
-                       <a href="#"><img src="img/list_icon.png" alt="menu_icon"></a>
-                     </div>
-                     <div class="sag_menu" >
-                       <a href="#" onclick="openSearch()" style="border-right: 1px solid rgb(255 255 255 / 40%);"><img src="img/search_icon.png" alt="search_icon"></a>
-                     </div>
-                   </div>
+              <nav id="nav_bar" class="col-md-12 navbar navbar-expand-md navbar-light">
+                <img id="mobile_navbar_icon" class="d-md-none " src="img/logo.png" alt="Wega">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <i class="fa-solid fa-bars" style="color:white;" aria-hidden="true"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle">
+                        HOME
+                      </a>
+                      <i class="fa-solid fa-angle-down" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#">Main Home</a>
+                        <a class="dropdown-item" href="#">Solar Photovoltaic Installers</a>
+                        <a class="dropdown-item" href="#">Interior Designing</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        OUR SERVICES
+                      </a>
+                      <i class="fa-solid fa-angle-down" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Services 1 Columns</a>
+                        <a class="dropdown-item" href="#">Services 2 Columns</a>
+                        <a class="dropdown-item" href="#">Services 3 Columns</a>
+                        <a class="dropdown-item" href="#">Services 1 Columns</a>
+                        <a class="dropdown-item" href="#">Services 2 Columns</a>
+                        <a class="dropdown-item" href="#">Services 3 Columns</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        PROJECTS
+                      </a>
+                      <i class="fa-solid fa-angle-down" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Services 1 Columns</a>
+                        <a class="dropdown-item" href="#">Services 2 Columns</a>
+                        <a class="dropdown-item" href="#">Services 3 Columns</a>
+                        <a class="dropdown-item" href="#">Services 1 Columns</a>
+                        <a class="dropdown-item" href="#">Services 2 Columns</a>
+                        <a class="dropdown-item" href="#">Services 3 Columns</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#">
+                        PAGES
+                      </a>
+                      <i class="fa-solid fa-angle-down" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"></i>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Contact Us</a>
+                        <a class="dropdown-item" href="#">Shop</a>
+                        <a class="dropdown-item" href="#">Our Team</a>
+                        <a class="dropdown-item" href="#">About Us</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#" style="border-right: 1px solid rgb(255 255 255 / 40%);">PURCHASE
+                        THEME</a>
+                    </li>
+                  </ul>
+                  <div class="mobile_navbar_info ">
+                    <div class="">
+                      <h3>Monday - Friday 09:00 - 19:00</h3>
+                      <div class="clearfix"></div>
+                      <h5>Saturday and Sunday - CLOSED</h5>
+                    </div>
+                    <div class="">
+                      <h3>
+                        +9090 8080 4044
+                      </h3>
+                      <div class="clearfix"></div>
+                      <h5>
+                        wega@example.com
+                      </h5>
+                    </div>
+                    <div class="">
+                      <a href="#" class="button-winona btn btn-medium " id="btn_inquiry">INQUIRY</a>
+                    </div>
                   </div>
-                </nav>
-
+                  <div class="sag_menu_ana">
+                    <div class="sag_menu">
+                      <a href="#" onclick="openNav()"><img src="img/list_icon.png" alt="menu_icon"></a>
+                    </div>
+                    <div class="sag_menu">
+                      <a href="#" class="openBtn" onclick="openSearch()"
+                        style="border-right: 1px solid rgb(255 255 255 / 40%);"><img src="img/search_icon.png"
+                          alt="search_icon"></a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
         </div>
       </header>
-          <div  class="my_slider carousel slide "  id="carouselExampleControls" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img class="d-block w-100" src="img/photovoltaic_slider_1.jpg" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/photovoltaic_slider_2.jpg" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="img/photovoltaic_slider_3.jpg" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev slider_buton_sag" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next slider_buton_sol" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
+      <div class="my_slider carousel slide " id="carouselExampleControls" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/photovoltaic_slider_1.jpg" alt="First slide">
           </div>
-
-          <div class="birinci_main">
-            <div class="newcontainer">
-                <div class="row">
-                    <main id="main" class="col-md-12">
-                      <div class="first_content">
-                        <div class="row">
-                          <div class="col-md-12   ">
-                              <h1 >
-                                  <span>Wega is</span> <br>
-                                  <span style="font-weight:600;">Inovation</span> <br>
-                                  <span style="font-family: 'Playfair Display'; " >In Construction</span>
-                              </h1>
-                          </div>
-                          <div class="col-md-8  ">
-                            <p class="">
-                              Our company provides a wide selection of crawler cranes,
-                              forklifts, access platforms, mobile and to work!
-                            </p>
-                          </div>
-                          <div class="col-md-4 my_button">
-                            <button type="button" class="btn btn-lg"  name="button"> Check Services</button>
-                          </div>
-                        </div>
-                      </div>
-                    </main>
-                </div>
-            </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/photovoltaic_slider_2.jpg" alt="Second slide">
           </div>
-
-
-
-    </div>
-
-    <div class="ikinci">
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/photovoltaic_slider_3.jpg" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev slide_buton_sol " href="#carouselExampleControls" role="button"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next slider_buton_sag" href="#carouselExampleControls" role="button"
+          data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+        <ul class="carousel-indicators carousel_altcizgi">
+          <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+          <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+        </ul>
+      </div>
+      <div class="birinci_main">
         <div class="newcontainer">
-          <div class="ikinci_birinci">
-            <div class="row">
-                <div class="col-md-4 ">
-                  <div class="uclu_kart">
-                    <img src="img/wrench.png" alt="wrench">
-                    <h4>
-                      Architecture & <br>
-                      Construct Works
-                    </h4>
-                    <hr>
-                    <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever before.</p>
-                    <a  href="#">READ MORE</a>
-                  </div>
-                </div>
-                <div class="col-md-4 ">
-                  <div class="uclu_kart">
-                    <img src="img/ruler.png" alt="calender">
-                    <h4>
-                      Architecture & <br>
-                      Construct Works
-                    </h4>
-                    <hr>
-                    <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever before.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="uclu_kart">
-                    <img src="img/calendar.png" alt="calender">
-                    <h4>
-                        Architecture & <br>
-                        Construct Works
-                    </h4>
-                    <hr>
-                    <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever before.</p>
-                    <a href="#">READ MORE</a>
-                  </div>
-                </div>
-            </div>
-          </div>
-          <div class="ikinci_ikinci">
-            <div class="row">
-              <div class="col-lg-5 col-md-6">
-                <div class="ikinci_ikinci_sol">
-                  <img class="img-fluid" src="img/Angro-About.jpg" alt="angro-about-img">
-                  <img class="img-fluid play_button" src="img/play-button-2.png" alt="play buton">
-                </div>
-              </div>
-              <div class="col-lg-7 col-md-6">
-                  <div class="ikinci_ikinci_sag">
-                    <h6>ABOUT US </h6>
+          <div class="row">
+            <main id="main" class="col-md-12">
+              <div class="first_content">
+                <div class="row">
+                  <div class="col-md-12   ">
                     <h1>
-                        A Modern Construction& <br>
-                        Industrial Agency
+                      <span>Wega is</span> <br>
+                      <span style="font-weight:600; margin: -30px 0 -30px 0;">Innovation</span> <br>
+                      <span style="font-family: 'Playfair Display'; ">In Construction</span>
                     </h1>
-                    <p>
-                      Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
-                      going forward, a new normal that has evolved from generation X is on the runway heading towards a
-                      streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-                    </p>
-                    <ul>
-                      <li>
-                        <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
-                        Globally incubate standards compliant channels before scalable benefits.
-                      </li>
-                      <li>
-                        <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
-                        Quickly disseminate superior deliverables whereas web-enabled applications.
-                      </li>
-                      <li>
-                        <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
-                        Override the digital divide with additional click throughs from DevOps.
-                      </li>
-                      <li>
-                        <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
-                        User generated content in real-time will have multiple touchpoints for offshoring.
-                      </li>
-                    </ul>
-                    <img src="img/Esio-signature.png" alt="imza">
                   </div>
+                  <div class="col-md-8 ">
+                    <p class="">
+                      Our company provides a wide selection of crawler cranes,
+                      forklifts, access platforms, mobile and to work!
+                    </p>
+                  </div>
+                  <div class="col-md-4 my_button">
+                    <button type="button" class="btn btn-lg" name="button"> Check Services</button>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ikinci">
+      <div class="newcontainer">
+        <div class="ikinci_birinci">
+          <div class="row">
+            <div class="col-md-4 ">
+              <div class="uclu_kart">
+                <img src="img/wrench.png" alt="wrench">
+                <h4>
+                  Architecture & <br>
+                  Construct Works
+                </h4>
+                <hr>
+                <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever
+                  before.</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="uclu_kart">
+                <img src="img/ruler.png" alt="calender">
+                <h4>
+                  Architecture & <br>
+                  Construct Works
+                </h4>
+                <hr>
+                <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever
+                  before.</p>
+                <a href="#">READ MORE</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="uclu_kart">
+                <img src="img/calendar.png" alt="calender">
+                <h4>
+                  Architecture & <br>
+                  Construct Works
+                </h4>
+                <hr>
+                <p>Yet those that embrace change thrivng, building bigger, better, faster, & stronge products than ever
+                  before.</p>
+                <a href="#">READ MORE</a>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <div class="ucuncu">
-
-      <div class="container-fluid">
-        <div id="baykus_slider" class="owl-carousel owl-theme">
-          <div class="item">
-            <h4>
-              <img src="img\Wega-blog_post1.jpg" alt="">
-            </h4>
-          </div>
-          <div class="item">
-            <h4>
-              <img src="img\Wega-blog_post02.jpg" alt="">
-            </h4>
-          </div>
-          <div class="item">
-            <h4>
-              <img src="img\Wega-blog_post03.jpg" alt="">
-            </h4>
-          </div>
-          <div class="item">
-            <h4>
-              <img src="img\Wega-blog_post5.jpg" alt="">
-            </h4>
-          </div>
-        </div>
-        <div class="baykus_silder_custom_buton">
-          <div class="newcontainer">
-            <div class="row">
-                <div id="r1" class="bg-info">
-                  Facade <br>
-                  Consultancy
-                </div>
-                <div id="r2" class="bg-info">
-                  Facade <br>
-                  Consultancy
-                </div>
-                <div id="r3" class="bg-info">
-                  Facade <br>
-                  Consultancy
-                </div>
-                <div id="r4" class="bg-info">
-                  Facade <br>
-                  Consultancy
-                </div>
-
+        <div class="ikinci_ikinci">
+          <div class="row">
+            <div class="col-lg-5 col-md-6">
+              <div class="ikinci_ikinci_sol">
+                <img class="img-fluid" src="img/Angro-About.jpg" alt="angro-about-img">
+                <img class="img-fluid play_button" src="img/play-button-2.png" alt="play buton">
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <div class="ikinci_ikinci_sag">
+                <h6>ABOUT US </h6>
+                <h1>
+                  A Modern Construction &
+                  Industrial Agency
+                </h1>
+                <p>
+                  Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day,
+                  going forward, a new normal that has evolved from generation X is on the runway heading towards a
+                  streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                  offshoring.
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
+                    Globally incubate standards compliant channels before scalable benefits.
+                  </li>
+                  <li>
+                    <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
+                    Quickly disseminate superior deliverables whereas web-enabled applications.
+                  </li>
+                  <li>
+                    <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
+                    Override the digital divide with additional click throughs from DevOps.
+                  </li>
+                  <li>
+                    <i class="fa fa-check" style="margin-right:10px; color:#ff5e15;font-size:20px"></i>
+                    User generated content in real-time will have multiple touchpoints for offshoring.
+                  </li>
+                </ul>
+                <img src="img/Esio-signature.png" alt="imza">
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-  </div>
-  <div class="dorduncu">
-    <div class="newcontainer bg-danger" style="height:600px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div>
-  </div>
-<script type="text/javascript">
 
-    var owl = $('#baykus_slider');
+    <div class="ucuncu">
+      <div class="container-fluid p-0 ">
+        <div class="siyah_ekran"></div>
+        <div class="tab-content ">
+          <div class="tab-pane active tab_panel_ici" id="tp_alan1" role="tabpanel" aria-labelledby="home-tab">
+            <div class="newcontainer">
+              <div class="panel_dikey_ortalama">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-12 col-md-10 col-lg-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_1">
+                          Facade engineering
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_2">
+                          Building consultancy
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_3">
 
-    owl.owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        dots:false,
-        responsive:{
-            0:{
-                items:1
-            }
+                          <img src="img/Wega-slider_icon1.png" alt="simge">
+                          <p>It becomes evident that building services can cover a wide range of tasks in order to keep
+                            a
+                            building.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_4">
+                          <img src="img/1-Wega--slider_icon2.png" alt="simge">
+
+                          <p>Regardless of the project’s type a lot of effort and strong coordination is required for
+                            the
+                            industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane tab_panel_ici" id="tp_alan2" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="newcontainer">
+              <div class="panel_dikey_ortalama">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-12 col-md-10 col-lg-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_1">
+                          Facade engineering
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_2">
+                          Building consultancy
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_3">
+
+                          <img src="img/Wega-slider_icon1.png" alt="simge">
+                          <p>It becomes evident that building services can cover a wide range of tasks in order to keep
+                            a
+                            building.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_4">
+                          <img src="img/1-Wega--slider_icon2.png" alt="simge">
+
+                          <p>Regardless of the project’s type a lot of effort and strong coordination is required for
+                            the
+                            industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane tab_panel_ici" id="tp_alan3" role="tabpanel" aria-labelledby="messages-tab">
+            <div class="newcontainer">
+              <div class="panel_dikey_ortalama">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-12 col-md-10 col-lg-10">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_1">
+                          Facade engineering
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_2">
+                          Building consultancy
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_3">
+
+                          <img src="img/Wega-slider_icon1.png" alt="simge">
+                          <p>It becomes evident that building services can cover a wide range of tasks in order to keep
+                            a
+                            building.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_4">
+                          <img src="img/1-Wega--slider_icon2.png" alt="simge">
+
+                          <p>Regardless of the project’s type a lot of effort and strong coordination is required for
+                            the
+                            industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane tab_panel_ici" id="tp_alan4" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="newcontainer">
+              <div class="panel_dikey_ortalama">
+                <div class="row justify-content-center">
+                  <div class="col-10 col-sm-12 col-md-10 col-lg-8">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_1">
+                          Facade engineering
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="tab_panel_text_2">
+                          Building consultancy
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_3">
+
+                          <img src="img/Wega-slider_icon1.png" alt="simge">
+                          <p>It becomes evident that building services can cover a wide range of tasks in order to keep
+                            a
+                            building.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="tab_panel_text_4">
+                          <img src="img/1-Wega--slider_icon2.png" alt="simge">
+
+                          <p>Regardless of the project’s type a lot of effort and strong coordination is required for
+                            the
+                            industry.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="newcontainer">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tp_alan1" role="tab"
+                aria-controls="tp_alan1" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tp_alan2" role="tab"
+                aria-controls="tp_alan2" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="messages-tab" data-toggle="tab" href="#tp_alan3" role="tab"
+                aria-controls="tp_alan3" aria-selected="false">Messages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="settings-tab" data-toggle="tab" href="#tp_alan4" role="tab"
+                aria-controls="tp_alan4" aria-selected="false">Settings</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="ucuncu">
+    <div class="container-fluid p-0">
+    <div id="baykus_slider" class="owl-carousel owl-theme">
+    <div class="item">
+    <h4>
+    <img src="img\Wega-blog_post1.jpg" alt="">
+  </h4>
+</div>
+<div class="item">
+<h4>
+<img src="img\Wega-blog_post02.jpg" alt="">
+</h4>
+</div>
+<div class="item">
+<h4>
+<img src="img\Wega-blog_post03.jpg" alt="">
+</h4>
+</div>
+<div class="item">
+<h4>
+<img src="img\Wega-blog_post5.jpg" alt="">
+</h4>
+</div>
+</div>
+<div class="baykus_silder_custom_buton">
+<div class="newcontainer">
+<div class="row">
+<div id="r1" class="bg-info">
+Facade <br>
+Consultancy
+</div>
+<div id="r2" class="bg-info">
+Facade <br>
+Consultancy
+</div>
+<div id="r3" class="bg-info">
+Facade <br>
+Consultancy
+</div>
+<div id="r4" class="bg-info">
+Facade <br>
+Consultancy
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+    <div class="dorduncu">
+      <div class="newcontainer bg-danger" style="height:600px;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      var owl = $('#baykus_slider');
+      owl.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1
+          }
         }
-    })
-    // Go to the next item
-    $('#r1').click(function() {
-        owl.trigger('to.owl.carousel', [0,300]);
-    })
-    $('#r2').click(function() {
-        owl.trigger('to.owl.carousel', [1,300]);
-    })
-    $('#r3').click(function() {
-        owl.trigger('to.owl.carousel', [2,300]);
-    })
-    $('#r4').click(function() {
-        owl.trigger('to.owl.carousel', [3,300]);
-    })
+      })
+      $('#r1').click(function () {
+        owl.trigger('to.owl.carousel', [0, 300]);
+      })
+      $('#r2').click(function () {
+        owl.trigger('to.owl.carousel', [1, 300]);
+      })
+      $('#r3').click(function () {
+        owl.trigger('to.owl.carousel', [2, 300]);
+      })
+      $('#r4').click(function () {
+        owl.trigger('to.owl.carousel', [3, 300]);
+      })
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "430px";
+        document.getElementById("mySidenav_black").style.zIndex = "99999";
+        document.getElementById("mySidenav_black").style.display = "block ";
+
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("mySidenav_black").style.zIndex = "-99999";
+        document.getElementById("mySidenav_black").style.display = "none ";
 
 
+      }
+      function openSearch() {
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("myOverlay").style.display = "none";
+      }
 
 
-  </script>
+    </script>
+    <div class="">
+      <div class="">
+        <div class="">
+
+        </div>
+      </div>
+    </div>
 
 </body>
+
 </html>
