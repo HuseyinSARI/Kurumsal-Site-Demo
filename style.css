@@ -150,7 +150,11 @@
 #nav_bar .dropdown-menu{
   border-radius: 0;
   margin: 0;
+   
 }
+
+
+
 
 .mobile_navbar_inline_icon {
   display: none;
@@ -165,6 +169,7 @@
   width: 25px;
   height: 25px
 }
+
 
 .sag_menu a {
   padding: 25px 35px 25px 35px;
@@ -1114,6 +1119,7 @@
     padding: 7px 15px;
     margin-top: 25;
     margin-left: 5px;
+    float: left;
   }
 
   .ikinci_birinci {
@@ -1279,15 +1285,23 @@
     display: none;
   }
 
-  .dropdown:hover .dropdown-menu {
+  #nav_bar .dropdown-menu{
     display: block;
-    /* transition: all .2s linear; */
-    
+    transform: translateY(40px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s linear;
   }
 
+  #nav_bar .dropdown:hover .dropdown-menu {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all .2s linear;
+    pointer-events: auto;
+  } 
+  
   .mobile_navbar_info {
     display: none;
-
   }
 
 
