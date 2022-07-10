@@ -1608,9 +1608,9 @@ ul#footer_social_icons li{
 
 /* *********************************************/
 @media (min-width:768px) and (max-width: 991px) {
-  .sag_menu a {
+  /* .sag_menu a {
     padding: 23px 20px 23px 20px !important;
-  }
+  } */
 
   #nav_bar a.nav-link {
     padding-left: 15px !important;
@@ -1738,9 +1738,9 @@ ul#footer_social_icons li{
 @media (min-width:992px) and (max-width: 1299px) {
 
 
-  .sag_menu a {
+  /* .sag_menu a {
     padding: 23px 20px 23px 20px !important;
-  }
+  } */
 
   #nav_bar a.nav-link {
     padding-left: 20px !important;
